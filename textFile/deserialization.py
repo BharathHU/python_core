@@ -1,4 +1,4 @@
-#Serialization the process of saving the object into the text file is referes to as serialization or pickling.
+#deserialization is the process of recreating the object from the saved file is called de-serialization or unplicking.
 import pickle
 class Student:
     def __init__(self,name,age,height,addr):
@@ -11,9 +11,9 @@ class Student:
         print(self.age)
         print(self.height)
         print(self.addr)
-s=Student("Rama",22,5.5,"Bengaluru")
-s=Student("Radha",22,5.8,"Mysuru")
-f=open("names.txt","wb")
-pickle.dump(s,f)
-print("Object is saved into text file")
+
+f=open("names.txt","rb")
+e=pickle.load(f)
+e.display()
 f.close()
+print("Object is saved into text file")
