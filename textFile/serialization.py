@@ -1,3 +1,4 @@
+#Serialization the process of 
 import pickle
 class Student:
     def __init__(self,name,age,height,addr):
@@ -11,6 +12,7 @@ class Student:
         print(self.height)
         print(self.addr)
 s=Student("Rama",22,5.5,"Bengaluru")
+s=Student("Radha",22,5.8,"Mysuru")
 f=open("names.txt","wb")
 pickle.dump(s,f)
 print("Object is saved into text file")
