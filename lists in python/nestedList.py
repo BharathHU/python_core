@@ -1,0 +1,12 @@
+a=[10,20,30,40,[50],[70]]
+print(a)
+a1=a
+b1=a.copy()
+print(a1)
+print(b1)
+a[4][0]=100
+print(a)
+a[5][0]=75
+print(a)
+print(a1)
+print(b1)
