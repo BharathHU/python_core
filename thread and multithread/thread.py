@@ -1,3 +1,8 @@
+# Task performming only one action or one task at the singl time of same time is referse to task. 
+# Multi-Task refersw to performing more than one task at the same time.
+# Thread referse to smallest unit of task or process.
+# Single Thread the process of executing the instruction in a sequence is called single thread.
+# multi thread referse to excecution multiple unit of instruction concurrently at a single time.
 import time
 class Demo:
     def print_names(self):
