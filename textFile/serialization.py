@@ -13,7 +13,7 @@ class Student:
         print(self.addr)
 s=Student("Rama",22,5.5,"Bengaluru")
 s=Student("Radha",22,5.8,"Mysuru")
-f=open("names.txt","wb")
+f=open("names.txt","w")
 pickle.dump(s,f)
 print("Object is saved into text file")
 f.close()
