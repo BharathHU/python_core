@@ -37,3 +37,33 @@ v4.start()
 v5.start()
 v6.start()
 print("Excecuted Successfully")
+from threading import Thread
+import time
+class Print_names(Thread):
+    def run(self):
+        names=["Rama","Krishna","Arjuna"]
+        for i in names:
+            print(i)
+        time.sleep(2)
+class Print_nums(Thread):
+    def run(self):
+        for i in range(10):
+            print(i)
+            time.sleep(2)
+class Print_sum(Thread):
+    def run(self):
+        a=100
+        b=200
+        c=a+b
+        d=a-b
+        print(d)
+        print(c)
+        time.sleep(2)
+d1=Print_names()
+d2=Print_nums()
+d3=Print_names()
+d4=Print_sum()
+d1.start()
+d2.start()
+d3.start()
+d4.start()
