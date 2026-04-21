@@ -18,6 +18,8 @@ class Demo:
         a=100
         b=200
         c=a+b
+        d=a-b
+        print(d)
         print(c)
         time.sleep(0.8)
 d=Demo()
