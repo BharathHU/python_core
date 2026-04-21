@@ -47,8 +47,8 @@ class Print_names(Thread):
         time.sleep(2)
 class Print_nums(Thread):
     def run(self):
-        for i in range(10):
-            print(i)
+        # for i in range(10):
+        #     print(i)
             time.sleep(2)
 class Print_sum(Thread):
     def run(self):
