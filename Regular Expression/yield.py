@@ -7,5 +7,4 @@ res=fun1()
 print(res. __next__())
 print(res. __next__())
 print(res. __next__())
-print(res. __next__())
-print(res. __next__())
+
